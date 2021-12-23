@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 pin.setVisibility(view.GONE);
                 btn1.setVisibility(view.GONE);
                 text1.setVisibility(view.GONE);
-                text2.setVisibility(view.GONE);
                 text3.setVisibility(view.GONE);
+                zabpass.setVisibility(view.GONE);
                 Toast.makeText(this, "Вы успешно зашли", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "Не правильные данные", Toast.LENGTH_SHORT).show();
             }
 
-//
+
         });
 
         gmail.addTextChangedListener(new TextWatcher() {
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
             }
             }
         });
-        System.out.println("Введите ваши данные");
-        System.out.println("Вы неправильно ввели данные");
+//        System.out.println("Введите ваши данные");
+//        System.out.println("Вы неправильно ввели данные");
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
